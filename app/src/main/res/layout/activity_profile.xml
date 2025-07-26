@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:background="#00020F">
+
+    <!-- App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOVVIDA"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Profile Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile"
+                android:background="@drawable/circle_border"
+                android:padding="4dp"/>
+
+            <!-- User Initial -->
+            <TextView
+                android:id="@+id/tvUserInitial"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp"
+                android:layout_marginTop="-120dp"/>
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"/>
+
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#AAAAAA"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/tvProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"/>
+            <!-- Edit Profile Button -->
+            <!-- <Button
+                 android:id="@+id/btnEditProfile"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Edit"
+                 android:textColor="#FFFFFF"
+                 android:background="@android:color/transparent"
+                 android:layout_marginTop="24dp"/>-->
+
+             <!-- Subscription Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardBackgroundColor="#1E1E1E"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Free Subscription"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to know >>"
+                        android:textColor="#F44336"
+                        android:layout_marginTop="8dp"/>
+
+                    <Button
+                        android:id="@+id/btnSubscription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Subscribe Now"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#2196F3"
+                        android:layout_marginTop="16dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Continue Watching Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue Watching"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Featured Content -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=">>>>"
+                android:textColor="#2196F3"
+                android:paddingLeft="10dp"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

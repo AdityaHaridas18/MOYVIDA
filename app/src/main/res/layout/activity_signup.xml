@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00020F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:fontFamily="@font/baloo_bhai"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="text"
+            android:background="@drawable/neumorphic_edittext"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/neumorphic_edittext"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="phone"
+            android:background="@drawable/neumorphic_edittext"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPassword"
+            android:background="@drawable/neumorphic_edittext"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

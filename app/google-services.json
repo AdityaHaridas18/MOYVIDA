@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "757126539523",
+    "firebase_url": "https://moyvida-admin-default-rtdb.firebaseio.com",
+    "project_id": "moyvida-admin",
+    "storage_bucket": "moyvida-admin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757126539523:android:33326e2603a9780c72a136",
+        "android_client_info": {
+          "package_name": "com.moyvida.moyvida"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2qg97-AZl9zinMvs3quUfUA1pLCIUwCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

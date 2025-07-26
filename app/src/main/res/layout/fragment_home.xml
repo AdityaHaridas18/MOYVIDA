@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_home.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+                <!-- App Name -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo"></ImageView>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="65dp"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/baseline_search_24"></ImageView>
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/profile"></ImageView>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Banner Slider -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="410dp" />
+
+        <!-- Logo Image (overlapping banner) -->
+        </RelativeLayout>
+
+        <!-- Dots Indicator -->
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dotsIndicator"
+            app:dotsColor="@color/white"
+            android:layout_width="wrap_content"
+            app:dotsSize="7dp"
+            app:selectedDotColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Language Selector -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language:"
+                android:textColor="@color/white"
+                android:fontFamily="@font/baloo_bhai"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical"/>
+
+            <Spinner
+                android:id="@+id/languageSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="150dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:popupBackground="#333333"/>
+        </LinearLayout>
+
+        <!-- Genres Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genres"
+            android:fontFamily="@font/baloo_bhai"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/genresContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <!-- Genres will be added programmatically -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/genresRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingHorizontal="5dp"
+                    android:clipToPadding="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Trending Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending Now"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baloo_bhai"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trendingRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- All Movies Button -->
+        <!-- <Button
+             android:id="@+id/allMoviesButton"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_height="wrap_content"
+             android:text="All Movies"
+             android:backgroundTint="#FF5722"
+             android:fontFamily="@font/baloo_bhai"
+             android:layout_margin="16dp"
+             android:layout_marginTop="24dp"/>-->
+
+     </LinearLayout>
+ </ScrollView>
